@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell Your Organic Products</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sell Your Organic Products</h1>
+  </header>
+  <form id="productForm" enctype="multipart/form-data">
+    <label for="farmerName">Farmer's Name:</label>
+    <input type="text" id="farmerName" name="farmerName" required>
+
+    <label for="contactNumber">Contact Number:</label>
+    <input type="tel" id="contactNumber" name="contactNumber" pattern="[0-9]{10}" required>
+
+    <label for="village">Village:</label>
+    <input type="text" id="village" name="village" required>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="cropName">Crop Name:</label>
+    <input type="text" id="cropName" name="cropName" required>
+
+    <label for="cropPhotos">Crop Photos:</label>
+    <input type="file" id="cropPhotos" name="cropPhotos" accept="image/*" multiple required>
+
+    <button type="submit" onclick="display()">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
